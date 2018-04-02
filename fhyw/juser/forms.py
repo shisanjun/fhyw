@@ -19,9 +19,13 @@ class UserProfileForm(forms.Form):
     password = forms.CharField(max_length=128,
                                widget=widgets.PasswordInput(attrs={"class": "form-control input-sm"}))
 
-    is_active = forms.BooleanField(
-            initial=True,
-            widget=widgets.CheckboxInput(attrs={"class": "magic-checkbox","id":"demo-form-checkbox"}))
-    is_admin = forms.BooleanField(
-            initial=False,
-            widget=widgets.CheckboxInput(attrs={"class": "magic-checkbox"}))
+    is_active = forms.BooleanField()
+    is_admin = forms.BooleanField()
+
+
+class MenuForm(forms.Form):
+    name = forms.CharField(error_messages={"required": "菜单名为空"},
+                           widget=widgets.TextInput(attrs={"class": "form-control input-sm"}))
+    seq = forms.IntegerField(error_messages={"required": "序号为空"},
+                             widget=widgets.TextInput(attrs={"class": "form-control input-sm"}))
+    comment = forms.CharField(required=False,widget=widgets.Textarea(attrs={"class": "form-control input-sm"}))

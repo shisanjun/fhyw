@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block container %}
-    <div id="container" class="effect mainnav-lg">
+    <div id="container" class="aside-float aside-bright mainnav-lg navbar-fixed">
 
         <!--NAVBAR-->
         {% include "header.html" %}
@@ -13,21 +13,22 @@
             <!--===================================================-->
             <div id="content-container">
 
+
                 <!--Page Title-->
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <div id="page-title">
-                    <h1 class="page-header text-overflow">{% block page-title %}请输入页面标题{% endblock %}</h1>
 
-                <!--End page title-->
+                <div id="page-title" class="panel" style="margin-top: 10px">
+                    <h2>{% block page-title %}请输入页面标题{% endblock %}</h2>
 
-                <!--Breadcrumb-->
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <ol class="breadcrumb">
-                    <li><a href="#">{% block menu %}请输入一级标题名{% endblock %}</a></li>
-                    <li class="active"><a href="#"><strong>{% block menu2 %}请输入二级标题名{% endblock %}</strong></a></li>
-                </ol>
-                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                <!--End breadcrumb-->
+                    <!--End page title-->
+                    <!--Breadcrumb-->
+
+                    <ol class="breadcrumb">
+                        <li>{% block menu %}请输入一级标题名{% endblock %}</li>
+                        <li>/</li>
+                        <li class="active"><strong>{% block menu2 %}请输入二级标题名{% endblock %}</strong></li>
+                    </ol>
+                    <!--End breadcrumb-->
+                </div>
 
 
                 <!--Page content-->

@@ -3,82 +3,230 @@
 {% block title %}一级导航{% endblock %}
 {% block page-title %}菜单管理{% endblock %}
 {% block menu %}菜单管理{% endblock %}
-{% block menu2 %}菜单管理{% endblock %}
+{% block menu2 %}一级菜单列表{% endblock %}
 {% block page-content %}
-    <div class="panel">
-        <div class="panel-heading">
-            <h3 class="panel-title">查看菜单</h3>
-        </div>
 
-        <!-- Foo Table - Add & Remove Rows -->
-        <!--===================================================-->
-        <div class="panel-body">
-            <div class="pad-btm form-inline">
-                <div class="row">
-                    <div class="col-sm-6 text-xs-center">
-                        <div class="form-group">
-                            <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i>
-                                增加用户
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 text-xs-center text-right">
-                        <div class="form-group">
-                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control"
-                                   autocomplete="off">
-                        </div>
-                    </div>
-                </div>
+
+    <div class="col-md-12">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">一级菜单列表</h3>
             </div>
-            <table id="demo-foo-addrow"
-                   class="table table-bordered table-hover toggle-circle footable-loaded footable default"
-                   data-page-size="7">
-                <thead>
-                <tr>
-                    <th data-sort-ignore="true" class="min-width footable-visible footable-first-column"></th>
-                    <th data-sort-initial="true" data-toggle="true"
-                        class="footable-visible footable-sortable footable-sorted">序号<span
-                            class="footable-sort-indicator"></span></th>
-                    <th class="footable-visible footable-sortable">菜单名<span
-                            class="footable-sort-indicator"></span></th>
-                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">菜单位置<span
-                            class="footable-sort-indicator"></span></th>
-                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
-                        操作<span
-                            class="footable-sort-indicator"></span></th>
-                </tr>
-                </thead>
+            <div class="panel-body">
 
-                <tbody>
+                <!--Launch demo modal wihtout animation-->
+                <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from
+                    your modal markup.</p><br>
+                <button data-target="#demo-modal-add" data-toggle="modal" class="btn btn-primary btn-md"
+                        onclick="clear_data()">增加一级菜单
+                </button>
 
-                {% for menu_obj in page_objs %}
-                    <tr class="footable-even" style="display: table-row;">
-                        <td class="footable-visible footable-first-column">
-                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i>
-                            </button>
-                        </td>
-                        <td class="footable-visible"><span class="footable-toggle"></span>{{ forloop.counter }}</td>
-                        <td class="footable-visible">{{ menu_obj.name }}</td>
-                        <td class="footable-visible">{{ menu_obj.seq }}</td>
-                        <td class="footable-visible">
-                            <a><span class="label  label-success">查看</span></a>
-                            <a><span class="label  label-dark">编辑</span></a>
-                            <a><span class="label label-table label-danger">删除</span></a>
+                <div class="hr-line-dashed"></div>
+                <table id="demo-foo-addrow"
+                       class="table table-bordered table-hover toggle-circle footable-loaded footable default"
+                       data-page-size="7">
+                    <thead>
+                    <tr>
+                        <th data-sort-ignore="true" class="min-width footable-visible footable-first-column"></th>
+                        <th data-sort-initial="true" data-toggle="true"
+                            class="footable-visible footable-sortable footable-sorted">序号<span
+                                class="footable-sort-indicator"></span></th>
+                        <th class="footable-visible footable-sortable">菜单名<span
+                                class="footable-sort-indicator"></span></th>
+                        <th data-hide="phone, tablet" class="footable-visible footable-sortable">菜单位置<span
+                                class="footable-sort-indicator"></span></th>
+                        <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                            操作<span
+                                class="footable-sort-indicator"></span></th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+
+                    {% for menu_obj in page_objs %}
+                        <tr class="footable-even" style="display: table-row;">
+                            <td class="footable-visible footable-first-column" target="{{ menu_obj.id }}">
+                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i>
+                                </button>
+                            </td>
+                            <td class="footable-visible"><span class="footable-toggle"></span>{{ forloop.counter }}</td>
+                            <td class="footable-visible">{{ menu_obj.name }}</td>
+                            <td class="footable-visible">{{ menu_obj.seq }}</td>
+                            <td class="footable-visible">
+                                <a href="#" onclick="menu_edit(this)"><span class="label  label-success">编辑</span></a>
+                                <a href="#" onclick="menu_del(this)"><span
+                                        class="label label-table label-danger">删除</span></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="7" class="footable-visible">
+                            {% include "paginator.html" %}
                         </td>
                     </tr>
-                {% endfor %}
-                </tbody>
-                <tfoot>
-                <tr>
-                    <td colspan="7" class="footable-visible">
-                        {% include "paginator.html" %}
-                    </td>
-                </tr>
-                </tfoot>
-            </table>
+                    </tfoot>
+                </table>
+            </div>
         </div>
-        <!--===================================================-->
-        <!-- End Foo Table - Add & Remove Rows -->
-
     </div>
+    <div class="modal" id="demo-modal-add" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal"
+         aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Modal header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i>
+                    </button>
+                    <h4 class="modal-title">增加一级菜单</h4>
+
+                </div>
+
+                <!--Modal body-->
+                <div class="modal-body">
+                    <form id="form_menu_add" class="form-horizontal" method="post">
+                        {% csrf_token %}
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="demo-hor-inputemail">菜单名：</label>
+                                <div class="col-sm-9">
+                                    {{ menu_add_form_obj.name }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="demo-hor-inputpass">菜单位置：</label>
+                                <div class="col-sm-9">
+                                    {{ menu_add_form_obj.seq }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="demo-hor-inputpass">备注：</label>
+                                <div class="col-sm-9">
+                                    {{ menu_add_form_obj.comment }}
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="alert alert-purple">
+                        <p class="show_error"></p>
+                    </div>
+                </div>
+                <!--Modal footer-->
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button" onclick="clear_data()">关闭
+                    </button>
+                    <button class="btn btn-primary" onclick="menu_add()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="demo-modal-edit" role="dialog" tabindex="-1" aria-labelledby="demo-default-modal"
+         aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!--Modal header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="pci-cross pci-circle"></i>
+                    </button>
+                    <h4 class="modal-title">修改一级菜单</h4>
+
+                </div>
+
+                <!--Modal body-->
+                <div class="modal-body">
+                    <form id="form_menu_add" class="form-horizontal" method="post">
+                        {% csrf_token %}
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="demo-hor-inputemail">菜单名：</label>
+                                <div class="col-sm-9">
+                                    {{ menu_add_form_obj.name }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="demo-hor-inputpass">菜单位置：</label>
+                                <div class="col-sm-9">
+                                    {{ menu_add_form_obj.seq }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="demo-hor-inputpass">备注：</label>
+                                <div class="col-sm-9">
+                                    {{ menu_add_form_obj.comment }}
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="alert alert-purple">
+                        <p class="show_error"></p>
+                    </div>
+                </div>
+                <!--Modal footer-->
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button" onclick="clear_data()">关闭
+                    </button>
+                    <button class="btn btn-primary" onclick="menu_add()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        function menu_add() {
+            //增加菜单
+            $.ajax({
+                url: '{% url "menu_add" %}',
+                type: "post",
+                data: $("#form_menu_add").serialize(),
+                dataType: "JSON",
+                success: function (thr) {
+
+                    if (thr.status) {
+                        $(".modal").addClass("hide");
+                        //模板modal自动生成的遮罩层
+                        $(".modal-backdrop").addClass("hide");
+                        location.reload();
+                    } else {
+                        console.log(thr.errors)
+                        //第二次转换JSON
+                        var errors = JSON.parse(thr.errors);
+                        //显示alert
+                        $(".alert").removeClass("hide");
+                        var text = ""
+                        for (i in errors) {
+                            text += errors[i][0].message + ";";
+                        }
+                        $(".show_error").text(text)
+                    }
+                }
+            })
+        }
+
+        function clear_data() {
+            //取消的时候清空输入
+            $('input[type="text"]').each(
+                    function () {
+                        $(this).val("");
+                    }
+            )
+            $(".alert").addClass("hide");
+        }
+
+        function menu_del(thr) {
+            //删除菜单
+            var id = $(thr).parent().parent().children().attr("target");
+
+            $.getJSON("{% url "menu_del" %}", {"id": id}, function (callback) {
+                if (callback.status) {
+                    location.reload();
+                }
+            })
+        }
+    </script>
 {% endblock %}

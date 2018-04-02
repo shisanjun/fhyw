@@ -1,12 +1,12 @@
 {% extends "muban.html" %}
-{% block title %}用户增加{% endblock %}
-{% block page-title %}用户增加{% endblock %}
+{% block title %}增加用户{% endblock %}
+{% block page-title %}增加用户{% endblock %}
 {% block menu %}用户管理{% endblock %}
-{% block menu2 %}用户增加{% endblock %}
+{% block menu2 %}增加用户{% endblock %}
 {% block page-content %}
     <div class="panel">
         <div class="panel-heading">
-            <h3 class="panel-title">Input size</h3>
+            <h3 class="panel-title">填写用户基本信息</h3>
         </div>
 
 
@@ -20,50 +20,51 @@
                         {{ user_form_obj.name }}
                     </div>
                 </div>
-                <hr>
+                <div class="hr-line-dashed"></div>
                 <div class="form-group">
                     <label for="demo-is-inputnormal" class="col-sm-3 control-label">邮箱：</label>
                     <div class="col-sm-6">
                         {{ user_form_obj.email }}
                     </div>
                 </div>
-                <hr>
+                <div class="hr-line-dashed"></div>
                 <div class="form-group">
                     <label for="demo-is-inputlarge" class="col-sm-3 control-label">密码</label>
                     <div class="col-sm-6">
                         {{ user_form_obj.password }}
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">是否激活</label>
-                    <div class="col-sm-3 ">
-                        <div class="checkbox">{{ user_form_obj.is_active }}
-                            <label for="demo-form-checkbox">激活</label>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-3 control-label">是否管理员</label>
-                    <div class="col-sm-3">
-                        <div class="checkbox">{{ user_form_obj.is_admin }}</div>
-
-                    </div>
-                </div>
                 <div class="form-group pad-ver">
-                    <label class="col-md-3 control-label">Inline Checkboxes</label>
+                    <label class="col-md-3 control-label">是否激活</label>
                     <div class="col-md-9">
-                        <div class="checkbox">
+                        <div class="radio">
+                            <!-- Inline radio buttons -->
+                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" checked=""
+                                   name="is_active" value="1">
+                            <label for="demo-inline-form-radio">激活</label>
 
-                            <!-- Inline Checkboxes -->
-                            <input id="demo-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked="">
-                            <label for="demo-form-inline-checkbox">Option 1 (pre-checked)</label>
+                            <input id="demo-inline-form-radio-2" class="magic-radio" type="radio"
+                                   name="is_active" value="0">
+                            <label for="demo-inline-form-radio-2">不激活</label>
 
-                            <input id="demo-form-inline-checkbox-2" class="magic-checkbox" type="checkbox">
-                            <label for="demo-form-inline-checkbox-2">Option 2</label>
 
-                            <input id="demo-form-inline-checkbox-3" class="magic-checkbox" type="checkbox">
-                            <label for="demo-form-inline-checkbox-3">Option 3</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group pad-ver">
+                    <label class="col-md-3 control-label">是否管理员</label>
+                    <div class="col-md-9">
+                        <div class="radio">
+                            <!-- Inline radio buttons -->
+                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" checked="" value="0"
+                                   name="is_admin">
+                            <label for="demo-inline-form-radio">否</label>
+
+                            <input id="demo-inline-form-radio-2" class="magic-radio" type="radio" value="1"
+                                   name="is_admin">
+                            <label for="demo-inline-form-radio-2">是</label>
+
 
                         </div>
                     </div>
@@ -78,6 +79,328 @@
                 </div>
             </div>
         </form>
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Form Validation</h3>
+            </div>
+
+            <form id="demo-bvd-notempty" action="forms-validation.html" class="form-horizontal bv-form"
+                  novalidate="novalidate">
+                <button type="submit" class="bv-hidden-submit" style="display: none; width: 0px; height: 0px;"></button>
+                <div class="panel-body">
+                    <p class="bord-btm pad-ver text-main text-bold">Not Empty validator</p>
+
+                    <!--NOT EMPTY VALIDATOR-->
+                    <!--===================================================-->
+                    <fieldset>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Username</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="username" placeholder="Username"
+                                       data-bv-field="username"><i class="form-control-feedback"
+                                                                   data-bv-icon-for="username"
+                                                                   style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="username"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The username is required.
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-7 col-lg-offset-3">
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-1" class="magic-checkbox" type="checkbox"
+                                           name="acceptTerms" data-bv-field="acceptTerms">
+                                    <label for="demo-checkbox-1"> Accept the terms and policies</label>
+                                </div>
+                                <i class="form-control-feedback" data-bv-icon-for="acceptTerms"
+                                   style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="acceptTerms"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">You have to accept the
+                                    terms and policies
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--===================================================-->
+
+                    <br>
+                    <p class="bord-btm pad-ver text-main text-bold">Identical validator</p>
+
+                    <!--IDENTICAL VALIDATOR-->
+                    <!--===================================================-->
+                    <fieldset>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Password</label>
+                            <div class="col-lg-7">
+                                <input type="password" class="form-control" name="password" placeholder="Password"
+                                       data-bv-field="password"><i class="form-control-feedback"
+                                                                   data-bv-icon-for="password"
+                                                                   style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="password"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The password is required
+                                    and can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="identical" data-bv-for="password"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The password and its
+                                    confirm are not the same
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Retype password</label>
+                            <div class="col-lg-7">
+                                <input type="password" class="form-control" name="confirmPassword"
+                                       placeholder="Retype password" data-bv-field="confirmPassword"><i
+                                    class="form-control-feedback" data-bv-icon-for="confirmPassword"
+                                    style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="confirmPassword"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The confirm password is
+                                    required and can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="identical" data-bv-for="confirmPassword"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The password and its
+                                    confirm are not the same
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--===================================================-->
+
+                    <br>
+                    <p class="bord-btm pad-ver text-main text-bold">Other validators</p>
+
+                    <!--OTHER VALIDATOR-->
+                    <!--===================================================-->
+                    <fieldset>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Member Type</label>
+                            <div class="col-lg-7">
+                                <div class="radio">
+                                    <input id="demo-radio-7" class="magic-radio" type="radio" name="member" value="free"
+                                           data-bv-field="member">
+                                    <label for="demo-radio-7">Free</label>
+
+                                    <input id="demo-radio-8" class="magic-radio" type="radio" name="member"
+                                           value="personal" data-bv-field="member">
+                                    <label for="demo-radio-8">Personal</label>
+
+                                    <input id="demo-radio-9" class="magic-radio" type="radio" name="member"
+                                           value="bussines" data-bv-field="member">
+                                    <label for="demo-radio-9">Bussiness</label>
+                                </div>
+                                <i class="form-control-feedback" data-bv-icon-for="member" style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="member"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The gender is required
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Skill</label>
+                            <div class="col-lg-7">
+
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-2" class="magic-checkbox" type="checkbox" name="programs[]"
+                                           value="net" data-bv-field="programs[]">
+                                    <label for="demo-checkbox-2">.Net</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-3" class="magic-checkbox" type="checkbox" name="programs[]"
+                                           value="java" data-bv-field="programs[]">
+                                    <label for="demo-checkbox-3">Java</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-4" class="magic-checkbox" type="checkbox" name="programs[]"
+                                           value="c" data-bv-field="programs[]">
+                                    <label for="demo-checkbox-4">C/C++</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-5" class="magic-checkbox" type="checkbox" name="programs[]"
+                                           value="php" data-bv-field="programs[]">
+                                    <label for="demo-checkbox-5">PHP</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-6" class="magic-checkbox" type="checkbox" name="programs[]"
+                                           value="perl" data-bv-field="programs[]">
+                                    <label for="demo-checkbox-6">Perl</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input id="demo-checkbox-7" class="magic-checkbox" type="checkbox" name="programs[]"
+                                           value="Ruby" data-bv-field="programs[]">
+                                    <label for="demo-checkbox-7">Ruby</label>
+                                </div>
+                                <i class="form-control-feedback" data-bv-icon-for="programs[]"
+                                   style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="choice" data-bv-for="programs[]"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please choose 2 - 4
+                                    programming languages you are good at
+                                </small>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Integer</label>
+                            <div class="col-lg-7">
+                                <input type="number" class="form-control" name="integer" placeholder="Integer"
+                                       data-bv-field="integer"><i class="form-control-feedback"
+                                                                  data-bv-icon-for="integer" style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="integer"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The number is required and
+                                    can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="integer" data-bv-for="integer"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The value is not a number
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Numeric</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="numeric" placeholder="Decimal is allowed"
+                                       data-bv-field="numeric"><i class="form-control-feedback"
+                                                                  data-bv-icon-for="numeric" style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="numeric"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The number is required and
+                                    can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="numeric" data-bv-for="numeric"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The value is not a number
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Greater than</label>
+                            <div class="col-lg-7">
+                                <input type="number" class="form-control" name="greaterthan"
+                                       placeholder="Numbers greater than 50" data-bv-field="greaterthan"><i
+                                    class="form-control-feedback" data-bv-icon-for="greaterthan"
+                                    style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="greaterthan"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The number is required and
+                                    can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="greaterThan" data-bv-for="greaterthan"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a value
+                                    greater than 50
+                                </small>
+                                <small class="help-block" data-bv-validator="integer" data-bv-for="greaterthan"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a valid number
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Less than 25</label>
+                            <div class="col-lg-7">
+                                <input type="number" class="form-control" name="lessthan"
+                                       placeholder="Numbers less than 50" data-bv-field="lessthan"><i
+                                    class="form-control-feedback" data-bv-icon-for="lessthan"
+                                    style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="lessthan"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The number is required and
+                                    can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="lessThan" data-bv-for="lessthan"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a value less
+                                    than 25
+                                </small>
+                                <small class="help-block" data-bv-validator="integer" data-bv-for="lessthan"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a valid number
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Range [1 - 100]</label>
+                            <div class="col-lg-7">
+                                <input type="number" class="form-control" name="range" placeholder="Numbers 1-100"
+                                       data-bv-field="range"><i class="form-control-feedback" data-bv-icon-for="range"
+                                                                style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="range"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The number is required and
+                                    can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="between" data-bv-for="range"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a number
+                                    between 1 and 100
+                                </small>
+                                <small class="help-block" data-bv-validator="integer" data-bv-for="range"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a valid number
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--===================================================-->
+
+                    <br>
+                    <p class="bord-btm pad-ver text-main text-bold">Regular expression based validators</p>
+
+                    <!--REGULAR EXPRESSION BASED VALIDATORS-->
+                    <!--===================================================-->
+                    <fieldset>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Email address</label>
+                            <div class="col-lg-7">
+                                <input type="email" class="form-control" name="email" placeholder="email"
+                                       data-bv-field="email"><i class="form-control-feedback" data-bv-icon-for="email"
+                                                                style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="email"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The email address is
+                                    required and can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="emailAddress" data-bv-for="email"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The input is not a valid
+                                    email address
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Website</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="website" placeholder="http://"
+                                       data-bv-field="website"><i class="form-control-feedback"
+                                                                  data-bv-icon-for="website" style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="website"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The website address is
+                                    required and can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="uri" data-bv-for="website"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The input is not a valid
+                                    URL
+                                </small>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label class="col-lg-3 control-label">Hex color</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="color" placeholder="#fff"
+                                       data-bv-field="color"><i class="form-control-feedback" data-bv-icon-for="color"
+                                                                style="display: none;"></i>
+                                <small class="help-block" data-bv-validator="notEmpty" data-bv-for="color"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The hex color is required
+                                    and can't be empty
+                                </small>
+                                <small class="help-block" data-bv-validator="hexColor" data-bv-for="color"
+                                       data-bv-result="NOT_VALIDATED" style="display: none;">The input is not a valid
+                                    hex color
+                                </small>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!--===================================================-->
+
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-7 col-sm-offset-3">
+                            <button class="btn btn-mint" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
         <!--===================================================-->
         <!--End Input Size-->
 

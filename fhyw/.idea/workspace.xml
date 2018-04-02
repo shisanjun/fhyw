@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/juser/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
               <folding>
                 <element signature="e#47#71#0" expanded="true" />
               </folding>
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widgets.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python36/Lib/site-packages/Django-1.11.3-py3.6.egg/django/forms/widgets.py">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Program Files/Python36/Lib/site-packages/Django-1.10.3-py3.6.egg/django/forms/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="279" column="6" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
+            <state vertical-scroll-proportion="-4.9">
+              <caret line="343" column="41" selection-start-line="343" selection-start-column="29" selection-end-line="343" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -51,19 +51,72 @@
         <entry file="file://$PROJECT_DIR$/juser/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+              <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_add.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/juser/user_add.html">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/juser/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8888888">
-              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/juser/menu_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.2677727">
+              <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+              <folding>
+                <element signature="e#1262#1481#0#HTML" expanded="false" />
+                <element signature="e#1399#1476#0#HTML" expanded="false" />
+                <element signature="e#1506#1638#0#HTML" expanded="false" />
+                <element signature="e#1556#1633#0#HTML" expanded="false" />
+                <element signature="e#1663#1822#0#HTML" expanded="false" />
+                <element signature="e#1740#1817#0#HTML" expanded="false" />
+                <element signature="e#1847#2054#0#HTML" expanded="false" />
+                <element signature="e#1972#2049#0#HTML" expanded="false" />
+                <element signature="e#3346#3588#0#HTML" expanded="false" />
+                <element signature="e#3374#3559#0#HTML" expanded="false" />
+                <element signature="e#3403#3533#0#HTML" expanded="false" />
+                <element signature="e#3663#6103#0#HTML" expanded="false" />
+                <element signature="e#3795#3817#0#HTML" expanded="true" />
+                <element signature="e#3994#4117#0#HTML" expanded="false" />
+                <element signature="e#4998#5123#0#HTML" expanded="false" />
+                <element signature="e#5351#5480#0#HTML" expanded="false" />
+                <element signature="e#5828#5950#0#HTML" expanded="false" />
+                <element signature="e#6242#6264#0#HTML" expanded="true" />
+                <element signature="e#6441#6564#0#HTML" expanded="false" />
+                <element signature="e#7445#7570#0#HTML" expanded="false" />
+                <element signature="e#7798#7927#0#HTML" expanded="false" />
+                <element signature="e#8275#8397#0#HTML" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu2_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/juser/menu2_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.892857">
+              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/juser/user_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3571428">
+              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -76,34 +129,39 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/fhyw/settings.py" />
         <option value="$PROJECT_DIR$/fhyw/views.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/fhyw/urls.py" />
         <option value="$PROJECT_DIR$/templates/nav.html" />
-        <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/juser/admin.py" />
         <option value="$PROJECT_DIR$/juser/models.py" />
         <option value="$PROJECT_DIR$/utils/paginator.py" />
         <option value="$PROJECT_DIR$/templates/juser/user.html" />
         <option value="$PROJECT_DIR$/juser/templatetags/page_tag.py" />
-        <option value="$PROJECT_DIR$/templates/muban.html" />
         <option value="$PROJECT_DIR$/templates/paginator.html" />
         <option value="$PROJECT_DIR$/utils/pages.py" />
-        <option value="$PROJECT_DIR$/templates/juser/menu_list.html" />
-        <option value="$PROJECT_DIR$/juser/urls.py" />
         <option value="$PROJECT_DIR$/templates/juser/user_list.html" />
-        <option value="$PROJECT_DIR$/juser/views.py" />
-        <option value="$PROJECT_DIR$/juser/forms.py" />
+        <option value="$PROJECT_DIR$/templates/header.html" />
+        <option value="$PROJECT_DIR$/templates/muban.html" />
+        <option value="$PROJECT_DIR$/static/js/fhyw.js" />
+        <option value="$PROJECT_DIR$/static/css/fhyw.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/juser/user_add.html" />
+        <option value="$PROJECT_DIR$/templates/juser/menu2_list.html" />
+        <option value="$PROJECT_DIR$/juser/forms.py" />
+        <option value="$PROJECT_DIR$/juser/urls.py" />
+        <option value="$PROJECT_DIR$/juser/views.py" />
+        <option value="$PROJECT_DIR$/templates/juser/menu_list.html" />
       </list>
     </option>
   </component>
@@ -115,8 +173,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -143,6 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,29 +277,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhyw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhyw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhyw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhyw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="juser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhyw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhyw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fhyw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\python培训作业\fhyw\templates\juser" />
       <recent name="E:\django项目\fhyw\templates\juser" />
       <recent name="E:\django项目\fhyw\templates" />
       <recent name="E:\django项目\fhyw\fhyw" />
       <recent name="E:\django项目\fhyw\static" />
-      <recent name="E:\django项目\fhyw\juser" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.fhyw">
@@ -510,16 +616,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1726361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35618278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -549,6 +655,156 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/juser/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+          <folding>
+            <element signature="e#47#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/user_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/muban.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juser/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+          <folding>
+            <element signature="e#47#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/user_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/juser/user_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -561,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,9 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#46#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,7 +839,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -619,14 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36/Lib/site-packages/Django-1.11.3-py3.6.egg/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="130" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/juser/user_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -640,7 +883,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,36 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039783">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21032505">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/nifty.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.370229">
-          <caret line="0" column="79970" selection-start-line="0" selection-start-column="79970" selection-end-line="0" selection-end-column="79970" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06267806">
-          <caret line="242" column="70" selection-start-line="242" selection-start-column="70" selection-end-line="242" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/juser/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5183246">
@@ -754,29 +967,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/juser/menu_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2753624">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="78" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/juser/templatetags/page_tag.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#46#73#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/muban.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7536232">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51811594">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,54 +996,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/juser/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8828828">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8130631">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/magic-check/css/magic-check.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.572072">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/nifty.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37740386">
+          <caret line="0" column="79971" selection-start-line="0" selection-start-column="79971" selection-end-line="0" selection-end-column="79971" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/pace.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="36" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/fhyw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5563063">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/muban.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8986486">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5990991">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/user_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6462882">
+          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#0;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#1;n#fieldset#1;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#2;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#3;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#4;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#5;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#2;n#div#0;n#div#6;n#fieldset#2;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#0;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#1;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#small#1;n#div#0;n#div#2;n#fieldset#3;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/juser/user_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.774194">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36/Lib/site-packages/Django-1.11.3-py3.6.egg/django/contrib/auth/base_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37049744">
-          <caret line="52" column="62" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="62" />
+        <state vertical-scroll-proportion="-1.3571428">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/juser/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03773585">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="112" selection-end-column="49" />
+        <state vertical-scroll-proportion="4.739958">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/juser/views.py">
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/Django-1.10.3-py3.6.egg/django/forms/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-4.9">
+          <caret line="343" column="41" selection-start-line="343" selection-start-column="29" selection-end-line="343" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36/Lib/site-packages/Django-1.11.3-py3.6.egg/django/forms/widgets.py">
+    <entry file="file://$PROJECT_DIR$/static/js/nifty.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="279" column="6" selection-start-line="279" selection-start-column="6" selection-end-line="279" selection-end-column="6" />
+        <state vertical-scroll-proportion="-2.0727272">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/menu2_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.892857">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -859,18 +1166,59 @@
     <entry file="file://$PROJECT_DIR$/juser/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding>
             <element signature="e#47#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/juser/user_add.html">
+    <entry file="file://$PROJECT_DIR$/juser/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8888888">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/juser/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/juser/menu_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2677727">
+          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+          <folding>
+            <element signature="e#1262#1481#0#HTML" expanded="false" />
+            <element signature="e#1399#1476#0#HTML" expanded="false" />
+            <element signature="e#1506#1638#0#HTML" expanded="false" />
+            <element signature="e#1556#1633#0#HTML" expanded="false" />
+            <element signature="e#1663#1822#0#HTML" expanded="false" />
+            <element signature="e#1740#1817#0#HTML" expanded="false" />
+            <element signature="e#1847#2054#0#HTML" expanded="false" />
+            <element signature="e#1972#2049#0#HTML" expanded="false" />
+            <element signature="e#3346#3588#0#HTML" expanded="false" />
+            <element signature="e#3374#3559#0#HTML" expanded="false" />
+            <element signature="e#3403#3533#0#HTML" expanded="false" />
+            <element signature="e#3663#6103#0#HTML" expanded="false" />
+            <element signature="e#3795#3817#0#HTML" expanded="true" />
+            <element signature="e#3994#4117#0#HTML" expanded="false" />
+            <element signature="e#4998#5123#0#HTML" expanded="false" />
+            <element signature="e#5351#5480#0#HTML" expanded="false" />
+            <element signature="e#5828#5950#0#HTML" expanded="false" />
+            <element signature="e#6242#6264#0#HTML" expanded="true" />
+            <element signature="e#6441#6564#0#HTML" expanded="false" />
+            <element signature="e#7445#7570#0#HTML" expanded="false" />
+            <element signature="e#7798#7927#0#HTML" expanded="false" />
+            <element signature="e#8275#8397#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
