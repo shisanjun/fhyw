@@ -1,0 +1,86 @@
+{% extends "muban.html" %}
+{% block title %}用户增加{% endblock %}
+{% block page-title %}用户增加{% endblock %}
+{% block menu %}用户管理{% endblock %}
+{% block menu2 %}用户增加{% endblock %}
+{% block page-content %}
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Input size</h3>
+        </div>
+
+
+        <!--Input Size-->
+        <!--===================================================-->
+        <form class="panel-body form-horizontal form-padding">
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="demo-is-inputsmall">用户名：</label>
+                    <div class="col-sm-6">
+                        {{ user_form_obj.name }}
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="demo-is-inputnormal" class="col-sm-3 control-label">邮箱：</label>
+                    <div class="col-sm-6">
+                        {{ user_form_obj.email }}
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label for="demo-is-inputlarge" class="col-sm-3 control-label">密码</label>
+                    <div class="col-sm-6">
+                        {{ user_form_obj.password }}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">是否激活</label>
+                    <div class="col-sm-3 ">
+                        <div class="checkbox">{{ user_form_obj.is_active }}
+                            <label for="demo-form-checkbox">激活</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">是否管理员</label>
+                    <div class="col-sm-3">
+                        <div class="checkbox">{{ user_form_obj.is_admin }}</div>
+
+                    </div>
+                </div>
+                <div class="form-group pad-ver">
+                    <label class="col-md-3 control-label">Inline Checkboxes</label>
+                    <div class="col-md-9">
+                        <div class="checkbox">
+
+                            <!-- Inline Checkboxes -->
+                            <input id="demo-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked="">
+                            <label for="demo-form-inline-checkbox">Option 1 (pre-checked)</label>
+
+                            <input id="demo-form-inline-checkbox-2" class="magic-checkbox" type="checkbox">
+                            <label for="demo-form-inline-checkbox-2">Option 2</label>
+
+                            <input id="demo-form-inline-checkbox-3" class="magic-checkbox" type="checkbox">
+                            <label for="demo-form-inline-checkbox-3">Option 3</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button class="btn btn-mint" type="submit">增加</button>
+                        <button class="btn btn-warning" type="reset">重置</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!--===================================================-->
+        <!--End Input Size-->
+
+
+    </div>
+{% endblock %}
