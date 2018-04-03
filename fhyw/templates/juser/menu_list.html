@@ -13,10 +13,6 @@
                 <h3 class="panel-title">一级菜单列表</h3>
             </div>
             <div class="panel-body">
-
-                <!--Launch demo modal wihtout animation-->
-                <p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from
-                    your modal markup.</p><br>
                 <button data-target="#demo-modal-add" data-toggle="modal" class="btn btn-primary btn-md"
                         onclick="clear_data()">增加一级菜单
                 </button>
@@ -53,7 +49,8 @@
                             <td class="footable-visible">{{ menu_obj.name }}</td>
                             <td class="footable-visible">{{ menu_obj.seq }}</td>
                             <td class="footable-visible">
-                                <a href="#" onclick="menu_edit(this)"><span class="label  label-success">编辑</span></a>
+                                <a href="#" data-target="#demo-modal-edit" data-toggle="modal"
+                                   onclick="menu_edit(this)"><span class="label  label-success">编辑</span></a>
                                 <a href="#" onclick="menu_del(this)"><span
                                         class="label label-table label-danger">删除</span></a>
                             </td>
@@ -138,25 +135,27 @@
 
                 <!--Modal body-->
                 <div class="modal-body">
-                    <form id="form_menu_add" class="form-horizontal" method="post">
+                    <form id="form_menu_edit" class="form-horizontal" method="post">
                         {% csrf_token %}
                         <div class="panel-body">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" for="demo-hor-inputemail">菜单名：</label>
                                 <div class="col-sm-9">
-                                    {{ menu_add_form_obj.name }}
+                                    <input type="text" name="id" id="form_menu_edit_id" style="display: none">
+                                    <input type="text" class="form-control input-sm" name="name" id="name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" for="demo-hor-inputpass">菜单位置：</label>
                                 <div class="col-sm-9">
-                                    {{ menu_add_form_obj.seq }}
+                                    <input type="text" class="form-control input-sm" name="seq" id="seq">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label" for="demo-hor-inputpass">备注：</label>
                                 <div class="col-sm-9">
-                                    {{ menu_add_form_obj.comment }}
+                                    <textarea name="comment" cols="40" rows="10" class="form-control input-sm"
+                                              id="comment"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +168,7 @@
                 <div class="modal-footer">
                     <button data-dismiss="modal" class="btn btn-default" type="button" onclick="clear_data()">关闭
                     </button>
-                    <button class="btn btn-primary" onclick="menu_add()">保存</button>
+                    <button class="btn btn-primary" onclick="menu_modify()">修改</button>
                 </div>
             </div>
         </div>
@@ -227,6 +226,20 @@
                     location.reload();
                 }
             })
+        }
+
+        function menu_edit(thr) {
+            var id = $(thr).parent().parent().children().attr("target");
+            $.getJSON("{% url "menu_list" %}", {"id": id}, function (callback) {
+                if (callback.status) {
+                    var callback_data = callback.data[0];
+                    $("#form_menu_edit_id").val(callback_data.id);
+                    $("#name").val(callback_data.name);
+                    $("#seq").val(callback_data.seq);
+                    $("#comment").val(callback_data.comment);
+                }
+            })
+
         }
     </script>
 {% endblock %}

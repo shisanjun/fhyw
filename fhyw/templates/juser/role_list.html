@@ -1,20 +1,20 @@
 {% extends "muban.html" %}
 
-{% block title %}二级导航{% endblock %}
-{% block page-title %}菜单管理{% endblock %}
-{% block menu %}菜单管理{% endblock %}
-{% block menu2 %}二级菜单列表{% endblock %}
+{% block title %}角色管理{% endblock %}
+{% block page-title %}角色管理{% endblock %}
+{% block menu %}角色管理{% endblock %}
+{% block menu2 %}角色列表{% endblock %}
 {% block page-content %}
 
 
     <div class="col-md-12">
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title">二级菜单列表</h3>
+                <h3 class="panel-title">角色列表</h3>
             </div>
             <div class="panel-body demo-nifty-btn">
 
-                <a href="{% url "menu2_add" %}" data-target="#demo-modal-wo-anim" class="btn btn-primary btn-md">增加二级菜单
+                <a href="{% url "role_add" %}" data-target="#demo-modal-wo-anim" class="btn btn-primary btn-md">增加角色
                 </a>
                 <div class="hr-line-dashed"></div>
                 <table id="demo-foo-addrow"
@@ -26,15 +26,9 @@
                         <th data-sort-initial="true" data-toggle="true"
                             class="footable-visible footable-sortable footable-sorted"><span
                                 class="footable-sort-indicator">序号</span></th>
-                        <th class="footable-visible footable-sortable">菜单名<span
+                        <th class="footable-visible footable-sortable">角色名<span
                                 class="footable-sort-indicator"></span></th>
-                        <th class="footable-visible footable-sortable">菜单位置<span
-                                class="footable-sort-indicator"></span></th>
-                        <th class="footable-visible footable-sortable">URL类型<span
-                                class="footable-sort-indicator"></span></th>
-                        <th class="footable-visible footable-sortable">URL地址<span
-                                class="footable-sort-indicator"></span></th>
-                        <th class="footable-visible footable-sortable">上级菜单<span
+                        <th class="footable-visible footable-sortable">角色权限<span
                                 class="footable-sort-indicator"></span></th>
                         <th class="footable-visible footable-last-column footable-sortable">
                             操作<span
@@ -44,23 +38,24 @@
 
                     <tbody>
 
-                    {% for menu2_obj in page_objs %}
+                    {% for role_obj in page_objs %}
                         <tr class="footable-even" style="display: table-row;">
-                            <td class="footable-visible hide" target="{{ menu2_obj.id }}">{{ menu2_obj.id }}</td>
+                            <td class="footable-visible hide" target="{{ role_obj.id }}">{{ role_obj.id }}</td>
                             <td class="footable-visible footable-first-column">
                                 <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i>
                                 </button>
                             </td>
                             <td class="footable-visible"><span class="footable-toggle"></span>{{ forloop.counter }}</td>
-                            <td class="footable-visible">{{ menu2_obj.name }}</td>
-                            <td class="footable-visible">{{ menu2_obj.seq }}</td>
-                            <td class="footable-visible">{{ menu2_obj.get_url_type_display }}</td>
-                            <td class="footable-visible">{{ menu2_obj.url }}</td>
-                            <td class="footable-visible">{{ menu2_obj.menu }}</td>
+                            <td class="footable-visible">{{ role_obj.name }}</td>
                             <td class="footable-visible">
-                                <a href="{% url "menu2_edit" menu2_obj.id %}"><span
+                                {% for menu in role_obj.menu.all %}
+                                    <span class="btn-warning">{{ menu }}</span>
+                                {% endfor %}
+                            </td>
+                            <td class="footable-visible">
+                                    <a href="{% url "role_edit" role_obj.id %}"><span
                                         class="label  label-success">编辑</span></a>
-                                <a id="demo-bootbox-confirm" href="#" onclick="menu2_del(this)"><span
+                                <a id="demo-bootbox-confirm" href="#" onclick="role_del(this)"><span
                                         class="label label-table label-danger">删除</span></a>
                             </td>
                         </tr>
@@ -86,11 +81,11 @@
                     <div class="bootbox-body">是否确认删除</div>
                 </div>
                 <div class="modal-footer">
-                    <button data-bb-handler="cancel" type="button" class="btn btn-default" onclick="menu2_del_cancel()">
+                    <button data-bb-handler="cancel" type="button" class="btn btn-default" onclick="role_del_cancel()">
                         取消
                     </button>
                     <button data-bb-handler="confirm" type="button" class="btn btn-primary"
-                            id="menu2_del_submit" onclick="menu2_del_submit(this)">删除
+                            id="role_del_submit" onclick="role_del_submit(this)">删除
                     </button>
                 </div>
             </div>
@@ -101,26 +96,26 @@
 
 {% block js %}
     <script>
-        //显示二级菜单删除确认对话框
-        function menu2_del(thr) {
+        //显示角色删除确认对话框
+        function role_del(thr) {
             $(".modal").removeClass("hide");
             $(".modal-backdrop").removeClass("hide");
             //取删除数据的ID
             var id = $(thr).parent().parent().children().attr("target")
-            $("#menu2_del_submit").attr("target", id)
+            $("#role_del_submit").attr("target", id)
         }
 
-        //隐藏二级菜单删除确认对话框
-        function menu2_del_cancel() {
+        //隐藏角色删除确认对话框
+        function role_del_cancel() {
             $(".modal").addClass("hide");
             $(".modal-backdrop").addClass("hide");
         }
 
-        //二级菜单删除数据
-        function menu2_del_submit(thr) {
+        //角色数据删除
+        function role_del_submit(thr) {
             var id = $(thr).attr("target")
 
-            $.getJSON("{% url "menu2_del" %}", {"id": id}, function (callback) {
+            $.getJSON("{% url "role_del" %}", {"id": id}, function (callback) {
                 if (callback.status) {
                     $(".modal").addClass("hide");
                     $(".modal-backdrop").addClass("hide");

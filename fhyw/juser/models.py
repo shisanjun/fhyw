@@ -32,7 +32,7 @@ class Menu2(models.Model):
     url_type = models.PositiveSmallIntegerField(choices=url_type_choice, default=0, verbose_name="URL类型",
                                                 help_text="选择相对URL还是绝对URL")
     url = models.CharField(max_length=128, verbose_name="URL地址", help_text="输入URL地址")
-    menu = models.ForeignKey("Menu", verbose_name="选择上级菜单")
+    menu = models.ForeignKey("Menu", verbose_name="选择上级菜单",on_delete=None)
     comment = models.TextField(verbose_name="备注", blank=True, null=True, help_text="备注说明")
 
     def __str__(self):
