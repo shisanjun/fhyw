@@ -1,0 +1,826 @@
+2018-04-16 11:08:47,158 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:08:47,171 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:08:47,201 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:20:37,868 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:20:37,882 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:20:37,911 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:20:56,724 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:20:56,738 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:20:56,767 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:21:42,958 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:21:42,971 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:21:43,000 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:46:12,818 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:46:12,832 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:46:12,862 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:46:33,576 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:46:33,590 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:46:33,620 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:51:39,933 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:51:39,946 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:51:39,976 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:52:29,633 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:52:29,647 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:52:29,676 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:56:56,373 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:56:56,387 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:56:56,416 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:57:19,030 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:57:19,045 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:57:19,075 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:58:09,294 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:58:09,307 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:58:09,337 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:58:40,692 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:58:40,706 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:58:40,736 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:59:32,744 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:59:32,758 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:59:32,787 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:59:54,928 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:59:54,942 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 11:59:54,971 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:00:27,203 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:00:27,217 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:00:27,246 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:08:50,401 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:08:50,415 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:08:50,444 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:09:14,394 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:09:14,408 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:09:14,437 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:09:52,257 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:09:52,272 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:09:52,301 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:12:56,033 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:12:56,046 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:12:56,078 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:13:22,066 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:13:22,080 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:13:22,111 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:14:27,392 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:14:27,406 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 12:14:27,439 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:36:53,221 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:36:53,235 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:36:53,266 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:37:28,370 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:37:28,384 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:37:28,415 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:37:52,131 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:37:52,145 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:37:52,177 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:38:30,008 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:38:30,023 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:38:30,053 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:39:31,070 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:39:31,085 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:39:31,116 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:52:12,274 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:52:12,289 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:52:12,320 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:52:36,617 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:52:36,632 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:52:36,662 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:55:26,513 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:55:26,528 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:55:26,559 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:57:35,091 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:57:35,106 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:57:35,138 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:57:48,327 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:57:48,341 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:57:48,373 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:58:55,030 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:58:55,044 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 13:58:55,074 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:01:32,568 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:01:32,582 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:01:32,615 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:02:00,098 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:02:00,113 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:02:00,144 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:17:33,841 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:17:33,856 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:17:33,891 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:13,582 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:13,597 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:13,627 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:22,916 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:22,931 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:22,963 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:30,359 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:30,373 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:30,403 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:47,704 - INFO : 192.168.7.1 linux main board plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\board.py", line 50, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:47,718 - INFO : 192.168.7.1 linux cpu plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 24, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\cpu.py", line 51, in parse
+    for row in content.split("\n\n"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:18:47,748 - INFO : 192.168.7.1 linux mem plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 25, in linux
+    response.data=self.parse(output)
+  File "E:\python培训作业\FhywClient\src\cmdb\mem.py", line 60, in parse
+    for item in content.split("Memory Device"):
+TypeError: a bytes-like object is required, not 'str'
+
+2018-04-16 14:24:17,111 - INFO : 192.168.7.1 linux basic plugin error:Traceback (most recent call last):
+  File "E:\python培训作业\FhywClient\src\cmdb\basic.py", line 43, in linux
+    "os_version": self.os_version(),
+  File "E:\python培训作业\FhywClient\src\cmdb\basic.py", line 30, in os_version
+    return output.strip().decode("utf-8")
+AttributeError: 'str' object has no attribute 'decode'
+
