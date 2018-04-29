@@ -160,7 +160,7 @@
                             </div>
                         </div>
                     </form>
-                    <div class="alert alert-purple">
+                    <div class="alert alert-purple hide">
                         <p class="show_error"></p>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                 <div class="modal-footer">
                     <button data-dismiss="modal" class="btn btn-default" type="button" onclick="clear_data()">关闭
                     </button>
-                    <button class="btn btn-primary" onclick="menu_modify()">修改</button>
+                    <button class="btn btn-primary" id="menu_modify_id" onclick="menu_modify(this)">修改</button>
                 </div>
             </div>
         </div>
@@ -192,7 +192,7 @@
                         $(".modal-backdrop").addClass("hide");
                         location.reload();
                     } else {
-                        console.log(thr.errors)
+
                         //第二次转换JSON
                         var errors = JSON.parse(thr.errors);
                         //显示alert
@@ -230,7 +230,9 @@
 
         function menu_edit(thr) {
             var id = $(thr).parent().parent().children().attr("target");
+            $("#form_menu_edit_id").val(id);
             $.getJSON("{% url "menu_list" %}", {"id": id}, function (callback) {
+
                 if (callback.status) {
                     var callback_data = callback.data[0];
                     $("#form_menu_edit_id").val(callback_data.id);
@@ -238,8 +240,33 @@
                     $("#seq").val(callback_data.seq);
                     $("#comment").val(callback_data.comment);
                 }
-            })
+            });
 
+        }
+
+        function menu_modify(thr) {
+
+            $.ajax({
+                url: "{% url "menu_edit" %}",
+                type: "post",
+                data: $("#form_menu_edit").serialize(),
+                dataType: "JSON",
+                success: function (thr) {
+                    if (thr.status) {
+                        location.reload();
+                    } else {
+                        //第二次转换JSON
+                        var errors = JSON.parse(thr.errors);
+                        //显示alert
+                        $(".alert").removeClass("hide");
+                        var text = ""
+                        for (i in errors) {
+                            text += errors[i][0].message + ";";
+                        }
+                        $(".show_error").text(text)
+                    }
+                }
+            })
         }
     </script>
 {% endblock %}

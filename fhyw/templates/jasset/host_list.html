@@ -1,0 +1,100 @@
+{% extends "muban.html" %}
+{% load asset_tag %}
+{% block title %}查看服务器{% endblock %}
+{% block page-title %}查看服务器{% endblock %}
+{% block menu %}服务器管理{% endblock %}
+{% block menu2 %}服务器列表{% endblock %}
+{% block page-content %}
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">查看主机</h3>
+        </div>
+
+        <!-- Foo Table - Add & Remove Rows -->
+        <!--===================================================-->
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="form-group">
+                            <a href="{% url "user_add" %}">
+                                <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i>
+                                    增加主机
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-xs-center text-right">
+                        <div class="form-group">
+                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control"
+                                   autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table id="demo-foo-addrow"
+                   class="table table-bordered table-hover toggle-circle footable-loaded footable default"
+                   data-page-size="7">
+                <thead>
+                <tr>
+                    <th data-sort-ignore="true" class="min-width footable-visible footable-first-column"></th>
+                    <th data-sort-initial="true" data-toggle="true">序号</th>
+                    <th class="footable-visible">主机IP<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">主机名称<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">系统平台<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        CPU型号<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        硬盘GB<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        内存GB<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        操作<span
+                            class="footable-sort-indicator"></span></th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                {% for host_obj in page_objs %}
+                    <tr class="footable-even" style="display: table-row;">
+                        <td class="footable-visible footable-first-column">
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i>
+                            </button>
+                        </td>
+                        <td class="footable-visible"><span class="footable-toggle"></span>{{ forloop.counter }}</td>
+                        <td class="footable-visible">{{ host_obj.host_ip }}</td>
+                        <td class="footable-visible">{{ host_obj.basic.hostname }}</td>
+                        <td class="footable-visible col-sm-3">{{ host_obj.basic.os_version }}</td>
+                        <td class="footable-visible">{{ host_obj.cpu.cpu_model }}</td>
+                         <td class="footable-visible">{% dsik_sum_size host_obj %}</td>
+                         <td class="footable-visible">{% mem_sum_sizes host_obj %}</td>
+
+                        <td class="footable-visible">
+                            <a href="{% url "asset_info" host_obj.asset_id %}"><span class="label label-success">查看详情</span></a>
+                            <a><span class="label label-danger">删除</span></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="9" class="footable-visible">
+
+                        {% include "paginator.html" %}
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!--===================================================-->
+        <!-- End Foo Table - Add & Remove Rows -->
+
+    </div>
+{% endblock %}

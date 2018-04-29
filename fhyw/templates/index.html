@@ -1,0 +1,128 @@
+{% extends "muban.html" %}
+{% load asset_tag %}
+{% block title %}首页{% endblock %}
+{% block page-title %}首页{% endblock %}
+{% block menu %}首页{% endblock %}
+{% block menu2 %}数据统计{% endblock %}
+{% block page-content %}
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-purple">
+                <div class="panel-heading">
+                    <h3 class="panel-title">用户统计</h3>
+                </div>
+                <div class="panel-body ">
+                    <div id="user-stat" style="height: 300px;width: 350px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">资产统计</h3>
+                </div>
+                <div class="panel-body">
+                    <div id="host-stat" style="height: 300px;width: 350px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">服务器统计</h3>
+                </div>
+                <div class="panel-body">
+                    <p>{{ hostgroup_list }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        var dom = document.getElementById("user-stat");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            {#            title: {#}
+            {#                text: '用户统计',#}
+            {#                subtext: '纯属虚构',#}
+            {#                x: 'center'#}
+            {#            },#}
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: {% group_show_name hostgroup_objs %}
+            },
+            series: [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['50%', '60%'],
+                    data: {% host_stat  hostgroup_objs%},
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        ;
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+    <script>
+        var dom = document.getElementById("host-stat");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+{#                        title: {#}
+{#                            text: '用户统计',#}
+{#                            subtext: '',#}
+{#                            x: 'center'#}
+{#                        },#}
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: {% group_show_name hostgroup_objs %}
+            },
+            series: [
+                {
+                    name: '服务器统计(台)',
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['50%', '60%'],
+                    data: {% host_stat  hostgroup_objs%},
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        ;
+        if (option && typeof option === "object") {
+            myChart.setOption(option, true);
+        }
+    </script>
+{% endblock %}

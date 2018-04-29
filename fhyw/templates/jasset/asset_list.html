@@ -1,0 +1,107 @@
+{% extends "muban.html" %}
+{% block title %}查看资产{% endblock %}
+{% block page-title %}查看资产{% endblock %}
+{% block menu %}资产管理{% endblock %}
+{% block menu2 %}资产列表{% endblock %}
+{% block page-content %}
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">查看资产</h3>
+        </div>
+
+        <!-- Foo Table - Add & Remove Rows -->
+        <!--===================================================-->
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="form-group">
+                            <a href="{% url "user_add" %}">
+                                <button id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i>
+                                    增加资产
+                                </button>
+                            </a>
+                            <a href="{% url "user_add" %}">
+                                <button id="demo-btn-addrow" class="btn btn-success"><i class="demo-pli-plus"></i>
+                                    批量导入资产
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-xs-center text-right">
+                        <div class="form-group">
+                            <input id="demo-input-search2" type="text" placeholder="Search" class="form-control"
+                                   autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table id="demo-foo-addrow"
+                   class="table table-bordered table-hover toggle-circle footable-loaded footable default"
+                   data-page-size="7">
+                <thead>
+                <tr>
+                    <th data-sort-ignore="true" class="min-width footable-visible footable-first-column"></th>
+                    <th data-sort-initial="true" data-toggle="true"
+                        class="footable-visible footable-sortable footable-sorted">序号<span
+                            class="footable-sort-indicator"></span></th>
+                    <th class="footable-visible footable-sortable">机房位置<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">设备类型<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">机柜编号<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        设备位置<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        设备状态<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        日期<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        操作<span
+                            class="footable-sort-indicator"></span></th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                {% for asset_obj in page_objs %}
+                    <tr class="footable-even" style="display: table-row;">
+                        <td class="footable-visible footable-first-column">
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i>
+                            </button>
+                        </td>
+                        <td class="footable-visible"><span class="footable-toggle"></span>{{ forloop.counter }}</td>
+                        <td class="footable-visible">{{ asset_obj.idc }}</td>
+                        <td class="footable-visible">{{ asset_obj.device_type.name }}</td>
+                        <td class="footable-visible">{{ asset_obj.cabinet_num }}</td>
+                        <td class="footable-visible">{{ asset_obj.cabinet_order }}</td>
+                        <td class="footable-visible">{{ asset_obj.get_device_status_display }}</td>
+                        <td class="footable-visible">{{ asset_obj.create_time|date:"Y-m-d H:i:s" }}</td>
+                        <td class="footable-visible">
+                            <a href="{% url "asset_info" asset_obj.id %}"><span
+                                    class="label  label-success">查看</span></a>
+                            <a><span class="label  label-dark">编辑</span></a>
+                            <a><span class="label label-table label-danger">删除</span></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="9" class="footable-visible">
+
+                        {% include "paginator.html" %}
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!--===================================================-->
+        <!-- End Foo Table - Add & Remove Rows -->
+
+    </div>
+{% endblock %}

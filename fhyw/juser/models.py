@@ -111,7 +111,7 @@ class UserProfile(AbstractBaseUser):
 
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
-
+    role=models.ManyToManyField("Role")
     objects = MyUserManager()
 
     USERNAME_FIELD = 'name'

@@ -18,7 +18,11 @@ from django.contrib import admin
 from juser import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', views.acc_login, name="login"),
+    url(r'^acc_login$', views.acc_login, name="login"),
+    url(r'^index.html$', views.index, name="index"),
+    url(r'^acc_logout$', views.acc_logout, name="logout"),
     url(r'^juser/',include("juser.urls")),
-
+    url(r'^jasset/', include("jasset.urls")),
 
 ]

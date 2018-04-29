@@ -1,0 +1,45 @@
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="text-right  col-lg-2">机房位置：</td>
+            <td><span class="label label-success">{{ host_obj.asset.idc }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器类型：</td>
+            <td><span class="label label-purple">{{ host_obj.asset.device_type.name }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器机柜编号：</td>
+            <td><span class="label label-purple">{{ host_obj.asset.cabinet_num }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器机柜中顺序：</td>
+            <td><span class="label label-purple">第{{ host_obj.asset.cabinet_order }}台</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器IP：</td>
+            <td><span class="label label-info">{{ host_obj.host_ip }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器主机名：</td>
+            <td><span class="label label-info">{{ host_obj.basic.hostname }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器平台版本：</td>
+            <td><span class="label label-info">{{ host_obj.basic.os_platform }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">服务器系统版本：</td>
+            <td><span class="label label-info">{{ host_obj.basic.os_version }}</span></td>
+        </tr>
+        <tr>
+            <td class="text-right  col-lg-2">更新日期：</td>
+            <td><span class="label label-info">{{ host_obj.basic.create_time|date:"Y-m-d H:i:s" }}</span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>

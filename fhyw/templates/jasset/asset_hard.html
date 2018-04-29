@@ -1,0 +1,284 @@
+{% load asset_tag %}
+<style>
+    .hard-container {
+        width: 100%;
+    }
+
+    .hard-nav {
+        position: fixed;
+        top: 300px;
+        right: 13px;
+        z-index: 20;
+    }
+
+    .nav-item {
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+        height: 30px;
+        width: 100px;
+        margin-top: 1px;
+        background-color: #a6e1ec;
+
+    }
+
+    .nav-item a {
+        color: brown;
+    }
+
+    .hard-container {
+
+    }
+</style>
+<div class="hard-container">
+    <div class="hard-nav">
+        <div class="nav-item">
+            <a href="#hard-summary">硬件总览</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">主板信息</a>
+        </div>
+        <div class="nav-item">
+            <a href="#hard-cpu">CPU信息</a>
+        </div>
+        <div class="nav-item">
+            <a href="#hard-mem">内存信息</a>
+        </div>
+        <div class="nav-item">
+            <a href="#hard-disk">硬盘信息</a>
+        </div>
+        <div class="nav-item">
+            <a href="#hard-nic">网卡信息</a>
+        </div>
+    </div>
+    <div class="hard-content">
+        <div id="hard-summary">
+            <div class="panel panel-purple">
+                <div class="panel-heading">
+                    <h3 class="panel-title">硬件总览：{{ host_obj.host_ip }}  </h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-center  col-sm-3">主板厂商：</td>
+                            <td><span class="label label-success">{{ host_obj.board.manufacturer }}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center  col-sm-3">CPU型号：</td>
+                            <td><span class="label label-purple">{{ host_obj.cpu.cpu_model }}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center  col-sm-3">内存信息：</td>
+                            <td><span class="label label-purple">{% mem_summary_info host_obj %}</span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center  col-sm-3">硬盘信息：</td>
+                            <td><span
+                                    class="label label-info">{% dsik_summary_info host_obj %}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center  col-sm-3">网卡信息：</td>
+                            <td><span
+                                    class="label label-info">{{ host_obj.nic.all.count}} 块网卡</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div id="hard-board">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">主板信息</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <table class="table table-bordered">
+                            <thead>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center  col-sm-3">主板厂商：</td>
+                                <td><span class="label label-success">{{ host_obj.board.manufacturer }}</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center  col-sm-3">主板型号：</td>
+                                <td><span class="label label-purple">{{ host_obj.board.model }}</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center  col-sm-3">主板序列号：</td>
+                                <td><span class="label label-purple">{{ host_obj.board.sn }}</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center  col-sm-3">更新日期：</td>
+                                <td><span
+                                        class="label label-info">{{ host_obj.board.create_time|date:"Y-m-d H:i:s" }}</span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div id="hard-cpu">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CPU信息</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center  col-sm-3">CPU厂商(型号)：</td>
+                                    <td><span class="label label-success">{{ host_obj.cpu.cpu_model }}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center  col-sm-3">CPU物理个数：</td>
+                                    <td><span
+                                            class="label label-purple">{{ host_obj.cpu.cpu_physical_count }}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center  col-sm-3">CPU可用数：</td>
+                                    <td><span class="label label-purple">{{ host_obj.cpu.cpu_count }}</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center  col-sm-3">更新日期：</td>
+                                    <td><span
+                                            class="label label-info">{{ host_obj.cpu.create_time|date:"Y-m-d H:i:s" }}</span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hard-mem">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">内存信息</h3>
+            </div>
+            <div class="panel-body">
+
+                <table class="table table-bordered">
+                    <thead>
+                    <th class="text-left ">序号</th>
+                    <th class="text-left ">插槽位</th>
+                    <th class="text-left ">制造商</th>
+                    <th class="text-left ">型号</th>
+                    <th class="text-left">大小</th>
+                    <th class="text-left">速度</th>
+                    <th class="text-left">内存SN号</th>
+                    <th class="text-left">创建更新时间</th>
+                    </thead>
+                    <tbody>
+                    {% for mem_obj in host_obj.memory.all %}
+                        <tr>
+                            <td class="text-left">{{ forloop.counter }}</td>
+                            <td class="text-left">{{ mem_obj.locator }}</td>
+                            <td class="text-left">{{ mem_obj.manufacturer }}</td>
+                            <td class="text-left">{{ mem_obj.type }}</td>
+                            <td class="text-left">{{ mem_obj.size }}</td>
+                            <td class="text-left">{{ mem_obj.speed }}</td>
+                            <td class="text-left">{{ mem_obj.sn }}</td>
+                            <td class="text-left">{{ mem_obj.create_time|date:"Y-m-d H:i:s" }}</td>
+                        </tr>
+
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div id="hard-disk">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">硬盘信息</h3>
+            </div>
+            <div class="panel-body">
+
+                <table class="table table-bordered">
+                    <thead>
+                    <th class="text-left ">序号</th>
+                    <th class="text-left ">插槽位</th>
+                    <th class="text-left ">磁盘厂商(型号)</th>
+                    <th class="text-left ">磁盘容量GB</th>
+                    <th class="text-left">磁盘类型</th>
+                    <th class="text-left">创建更新时间</th>
+                    </thead>
+                    <tbody>
+                    {% for disk_obj in host_obj.disk.all %}
+                        <tr>
+                            <td class="text-left">{{ forloop.counter }}</td>
+                            <td class="text-left">{{ disk_obj.slot }}</td>
+                            <td class="text-left">{{ disk_obj.model }}</td>
+                            <td class="text-left">{{ disk_obj.size }}</td>
+                            <td class="text-left">{{ disk_obj.pd_type }}</td>
+                            <td class="text-left">{{ disk_obj.create_time|date:"Y-m-d H:i:s" }}</td>
+                        </tr>
+
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <div id="hard-nic">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">网卡信息</h3>
+            </div>
+            <div class="panel-body">
+
+                <table class="table table-bordered">
+                    <thead>
+                    <th class="text-left ">序号</th>
+                    <th class="text-left ">网卡名称</th>
+                    <th class="text-left ">网卡mac地址</th>
+                    <th class="text-left ">子网掩码</th>
+                    <th class="text-left">ip地址</th>
+                    <th class="text-left">网卡状态</th>
+                    <th class="text-left">创建更新时间</th>
+                    </thead>
+                    <tbody>
+                    {% for nic_obj in host_obj.nic.all %}
+                        <tr>
+                            <td class="text-left">{{ forloop.counter }}</td>
+                            <td class="text-left">{{ nic_obj.name }}</td>
+                            <td class="text-left">{{ nic_obj.hwaddr }}</td>
+                            <td class="text-left">{{ nic_obj.netmask }}</td>
+                            <td class="text-left">{{ nic_obj.ipaddrs }}</td>
+                            <td class="text-left">{{ nic_obj.up }}</td>
+                            <td class="text-left">{{ nic_obj.create_time|date:"Y-m-d H:i:s" }}</td>
+                        </tr>
+
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

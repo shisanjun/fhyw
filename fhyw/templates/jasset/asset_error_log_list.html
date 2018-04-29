@@ -1,0 +1,97 @@
+{% extends "muban.html" %}
+{% block title %}报警日志{% endblock %}
+{% block page-title %}警报日志{% endblock %}
+{% block menu %}服务器管理{% endblock %}
+{% block menu2 %}报警日志{% endblock %}
+{% block page-content %}
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">报警日志</h3>
+        </div>
+
+        <!-- Foo Table - Add & Remove Rows -->
+        <!--===================================================-->
+        <div class="panel-body">
+            <div class="pad-btm form-inline">
+                <div class="row">
+                    <div class="col-sm-6 text-xs-center">
+                        <div class="form-group">
+                            <a>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-xs-center text-right">
+                        <div class="form-group">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input id="demo-input-search2" type="text" placeholder="主机IP" class="form-control" name="host_ip"
+                                       autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <a>
+                                    <button  type="submit" id="demo-btn-addrow" class="btn btn-purple"><i class="demo-pli-plus"></i>
+                                        查询
+                                    </button>
+                                </a>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table id="demo-foo-addrow"
+                   class="table table-bordered table-hover toggle-circle footable-loaded footable default"
+                   data-page-size="7">
+                <thead>
+                <tr>
+                    <th data-sort-ignore="true" class="min-width footable-visible footable-first-column"></th>
+                    <th data-sort-initial="true" data-toggle="true"
+                        class="footable-visible footable-sortable footable-sorted">序号<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">资产<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">报警标题<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-sortable">变更时间<span
+                            class="footable-sort-indicator"></span></th>
+                    <th data-hide="phone, tablet" class="footable-visible footable-last-column footable-sortable">
+                        操作<span
+                            class="footable-sort-indicator"></span></th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                {% for asset_error_log_obj in page_objs %}
+                    <tr class="footable-even" style="display: table-row;">
+                        <td class="footable-visible footable-first-column">
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i>
+                            </button>
+                        </td>
+                        <td class="footable-visible"><span class="footable-toggle"></span>{{ forloop.counter }}</td>
+                        <td class="footable-visible">{{ asset_error_log_obj.asset.device_type.name }}</td>
+                        <td class="footable-visible">{{ asset_error_log_obj.title }}</td>
+
+                        <td class="footable-visible">{{ asset_error_log_obj.create_time|date:"Y-m-d H:i:s" }}</td>
+                        <td class="footable-visible">
+                            <a href=""><span class="label  label-success">查看</span></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="9" class="footable-visible">
+
+                        {% include "paginator.html" %}
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!--===================================================-->
+        <!-- End Foo Table - Add & Remove Rows -->
+
+    </div>
+{% endblock %}

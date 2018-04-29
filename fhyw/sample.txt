@@ -1,0 +1,22 @@
+
+
+who -m | awk '{ print $NF }' 从那台主机登陆过来
+
+
+
+{'host': '192.168.7.1', 'data': {'mem': '{"status": true, "message": null, "data": [{"Speed": null, "Locator": null, "Serial Number": null, "Size": null, "Type": null, "Manufacturer": null}, {"Speed": "1333 MHz", "Locator": "
+DIMM_A1", "Serial Number": "148160B5", "Size": "8192 MB", "Type": "DDR3", "Manufacturer": "Samsung"}, {"Speed": "1333 MHz", "Locator": "DIMM_B1", "Serial Number": "148160DE", "Size": "8192 MB", "Type": "DDR3", "Manufacturer":
+ "Samsung"}, {"Speed": "1333 MHz", "Locator": "DIMM_C1", "Serial Number": "148160C6", "Size": "8192 MB", "Type": "DDR3", "Manufacturer": "Samsung"}, {"Speed": "Unknown", "Locator": "DIMM_D1", "Serial Number": "DIMM_D1_SerNum"
+, "Size": "No Module Installed", "Type": "Unknown", "Manufacturer": "DIMM_D1_Manufacturer"}, {"Speed": "1333 MHz", "Locator": "DIMM_E1", "Serial Number": "14816158", "Size": "8192 MB", "Type": "DDR3", "Manufacturer": "Samsung
+"}, {"Speed": "1333 MHz", "Locator": "DIMM_F1", "Serial Number": "14816152", "Size": "8192 MB", "Type": "DDR3", "Manufacturer": "Samsung"}, {"Speed": "1333 MHz", "Locator": "DIMM_G1", "Serial Number": "148160F7", "Size": "819
+2 MB", "Type": "DDR3", "Manufacturer": "Samsung"}, {"Speed": "Unknown", "Locator": "DIMM_H1", "Serial Number": "DIMM_H1_SerNum", "Size": "No Module Installed", "Type": "Unknown", "Manufacturer": "DIMM_H1_Manufacturer"}], "err
+or": null}', 'nic': '{"status": true, "message": null, "data": {"eth5": {"hwaddr": "60:a4:4c:e8:07:4d", "ipaddrs": "", "netmask": "", "up": false}, "eth4": {"hwaddr": "60:a4:4c:e8:07:4c", "ipaddrs": "", "netmask": "", "up": f
+alse}, "eth1": {"hwaddr": "00:16:31:fa:ff:55", "ipaddrs": "", "netmask": "", "up": true}, "eth0": {"hwaddr": "00:16:31:fa:ff:54", "ipaddrs": "192.168.7.110", "netmask": "255.255.240.0", "up": true}}, "error": null}', 'board':
+ '{"status": true, "message": null, "data": {"Serial Number": "To be filled by O.E.M.", "Product Name": "Z9PA-D8 Series", "Manufacturer": "ASUSTeK COMPUTER INC."}, "error": null}', 'basic': '{"status": true, "message": null,
+"data": {"os_version": "Red Hat Enterprise Linux Server release 6.3 (Santiago)", "os_platform": "Linux", "hostname": "slave110"}, "error": null}', 'disk': '{"status": true, "message": null, "data": [{"slot": 0, "pd_type": "un
+know", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 1, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 2, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"},
+ {"slot": 3, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 4, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 5, "pd_type": "unknow", "mode": "ATA Hitachi HU
+A72302", "size": "2000.4"}, {"slot": 6, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 7, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 8, "pd_type": "unkno
+w", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 9, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {"slot": 10, "pd_type": "unknow", "mode": "ATA Hitachi HUA72302", "size": "2000.4"}, {
+"slot": 11, "pd_type": "unknow", "mode": "ATA ST2000NM0033-9ZM", "size": "2000.4"}, {"slot": 12, "pd_type": "unknow", "mode": "ATA Samsung SSD 840", "size": "120.0"}], "error": null}', 'cpu': '{"status": true, "message": null
+, "data": {"cpu_num": 24, "cpu_physical_count": 2, "cpu_model": " Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz"}, "error": null}'}}
