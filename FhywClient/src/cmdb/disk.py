@@ -15,7 +15,7 @@ sys.path.append(BASE_DIR)
 
 from src.cmdb.base import BasePlugin
 from src.lib.response import BaseResponse
-
+from src.lib.conver import mb2gb
 class DiskPlugin(BasePlugin):
     """获取DISK信息"""
     def __init__(self,*args,**kwargs):
@@ -58,7 +58,7 @@ class DiskPlugin(BasePlugin):
         output=self.exec_shell_cmd("MegaCli64  -PDList -aALL")
         content=output.strip()
 
-        response={"disk":[]}
+        response=[]
         disk_dict={}
 
         #subprocess output.stdout.read() or paramiko read() \n\n是大段分割，\n行分割
@@ -77,14 +77,13 @@ class DiskPlugin(BasePlugin):
                 if "PD Type" in row:
                     disk_dict["pd_type"]=val
                 if "Raw Size" in row:
-                    disk_dict["size"]=val.split()[0]
+                    disk_dict["size"]=mb2gb(val)
                 if "Inquiry Data" in row:
                     disk_dict["model"]=val
             if len(disk_dict)==0:
                 continue
 
-            response["disk"].append(copy.deepcopy(disk_dict))
-        print(response)
+            response.append(copy.deepcopy(disk_dict))
         return response
 
     def not_has_raid_parse(self):
